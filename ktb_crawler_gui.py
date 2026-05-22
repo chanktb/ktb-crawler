@@ -138,7 +138,8 @@ class KTBCrawlerGUI(tk.Tk):
                         final_mockup = apply_mockup(trimmed_img, m_img, chosen_mockup.get("coords"))
                         
                         if use_watermark:
-                            wm_path = os.path.join(WATERMARK_DIR, f"{site_name}.png")
+                            wm_filename = mockup_cfg.get("watermark_file", f"{site_name}.png")
+                            wm_path = os.path.join(WATERMARK_DIR, wm_filename)
                             if os.path.exists(wm_path):
                                 wm_img = Image.open(wm_path).convert("RGBA")
                                 wm_w, wm_h = wm_img.size
@@ -215,17 +216,30 @@ class KTBCrawlerGUI(tk.Tk):
             cb = tk.Checkbutton(sites_frame, text=site, variable=var, bg="#f0f0f0")
             cb.pack(side=tk.LEFT, padx=5)
             
-        options_frame = tk.LabelFrame(top_frame, text="2. Tùy chọn", bg="#f0f0f0")
+        options_frame = tk.LabelFrame(top_frame, text="2. Tùy chọn Chung", bg="#f0f0f0")
         options_frame.pack(side=tk.TOP, fill=tk.X, padx=10, pady=2)
         
-        wm_cb = tk.Checkbutton(options_frame, text="Thêm Watermark", variable=self.watermark_var, bg="#f0f0f0", font=("Arial", 10, "bold"), fg="blue")
+        # Hàng 1 của Options
+        opt_row1 = tk.Frame(options_frame, bg="#f0f0f0")
+        opt_row1.pack(side=tk.TOP, fill=tk.X, pady=2)
+        
+        wm_cb = tk.Checkbutton(opt_row1, text="Thêm Watermark", variable=self.watermark_var, bg="#f0f0f0", font=("Arial", 10, "bold"), fg="blue")
         wm_cb.pack(side=tk.LEFT, padx=10)
         
-        tk.Label(options_frame, text="Định dạng Output:", bg="#f0f0f0").pack(side=tk.LEFT, padx=5)
-        tk.Radiobutton(options_frame, text="JPG", variable=self.output_format_var, value="jpg", bg="#f0f0f0").pack(side=tk.LEFT)
-        tk.Radiobutton(options_frame, text="WEBP", variable=self.output_format_var, value="webp", bg="#f0f0f0").pack(side=tk.LEFT)
+        tk.Label(opt_row1, text="Định dạng Output:", bg="#f0f0f0").pack(side=tk.LEFT, padx=5)
+        tk.Radiobutton(opt_row1, text="JPG", variable=self.output_format_var, value="jpg", bg="#f0f0f0").pack(side=tk.LEFT)
+        tk.Radiobutton(opt_row1, text="WEBP", variable=self.output_format_var, value="webp", bg="#f0f0f0").pack(side=tk.LEFT)
         
-        title_frame = tk.LabelFrame(top_frame, text="3. Cấu hình Title (Tiền tố/Hậu tố)", bg="#f0f0f0")
+        # Hàng 2 của Options
+        opt_row2 = tk.Frame(options_frame, bg="#f0f0f0")
+        opt_row2.pack(side=tk.TOP, fill=tk.X, pady=2)
+        
+        tk.Label(opt_row2, text="WP User mặc định:", bg="#f0f0f0").pack(side=tk.LEFT, padx=10)
+        self.wp_user_var = tk.StringVar(value=self.config_data.get("defaults", {}).get("wp_username", ""))
+        tk.Entry(opt_row2, textvariable=self.wp_user_var, width=20).pack(side=tk.LEFT, padx=5)
+        tk.Button(opt_row2, text="Lưu User", command=self.save_global_config, bg="#aaddaa").pack(side=tk.LEFT, padx=5)
+        
+        title_frame = tk.LabelFrame(top_frame, text="3. Cấu hình riêng theo Site", bg="#f0f0f0")
         title_frame.pack(side=tk.TOP, fill=tk.X, padx=10, pady=2)
         
         tk.Label(title_frame, text="Site:", bg="#f0f0f0").pack(side=tk.LEFT, padx=5)
@@ -235,13 +249,18 @@ class KTBCrawlerGUI(tk.Tk):
         
         tk.Label(title_frame, text="Prefix:", bg="#f0f0f0").pack(side=tk.LEFT, padx=5)
         self.title_prefix_var = tk.StringVar()
-        tk.Entry(title_frame, textvariable=self.title_prefix_var, width=15).pack(side=tk.LEFT, padx=5)
+        tk.Entry(title_frame, textvariable=self.title_prefix_var, width=10).pack(side=tk.LEFT, padx=5)
         
         tk.Label(title_frame, text="Suffix:", bg="#f0f0f0").pack(side=tk.LEFT, padx=5)
         self.title_suffix_var = tk.StringVar()
-        tk.Entry(title_frame, textvariable=self.title_suffix_var, width=25).pack(side=tk.LEFT, padx=5)
+        tk.Entry(title_frame, textvariable=self.title_suffix_var, width=15).pack(side=tk.LEFT, padx=5)
         
-        tk.Button(title_frame, text="Lưu Config", command=self.save_title_config, bg="#aaddaa").pack(side=tk.LEFT, padx=10)
+        tk.Label(title_frame, text="Watermark:", bg="#f0f0f0").pack(side=tk.LEFT, padx=5)
+        wm_files = [f for f in os.listdir(WATERMARK_DIR) if f.lower().endswith('.png')] if os.path.exists(WATERMARK_DIR) else []
+        self.wm_file_combo = ttk.Combobox(title_frame, values=wm_files, state="readonly", width=15)
+        self.wm_file_combo.pack(side=tk.LEFT, padx=5)
+        
+        tk.Button(title_frame, text="Lưu Cấu Hình Site", command=self.save_title_config, bg="#aaddaa").pack(side=tk.LEFT, padx=10)
         
         if output_sites:
             self.title_site_combo.current(0)
@@ -294,12 +313,31 @@ class KTBCrawlerGUI(tk.Tk):
             mockup_cfg = self.config_data.get("mockup_sets", {}).get(site, {})
             self.title_prefix_var.set(mockup_cfg.get("title_prefix_to_add", ""))
             self.title_suffix_var.set(mockup_cfg.get("title_suffix_to_add", ""))
+            
+            # Select watermark
+            wm_file = mockup_cfg.get("watermark_file", f"{site}.png")
+            if wm_file in self.wm_file_combo['values']:
+                self.wm_file_combo.set(wm_file)
+            else:
+                self.wm_file_combo.set('')
+
+    def save_global_config(self):
+        if "defaults" not in self.config_data:
+            self.config_data["defaults"] = {}
+        self.config_data["defaults"]["wp_username"] = self.wp_user_var.get()
+        try:
+            with open(CONFIG_PATH, 'w', encoding='utf-8') as f:
+                json.dump(self.config_data, f, indent=4, ensure_ascii=False)
+            messagebox.showinfo("Thành công", "Đã lưu Cấu hình Chung!")
+        except Exception as e:
+            messagebox.showerror("Lỗi", f"Không thể lưu config: {e}")
 
     def save_title_config(self):
         site = self.title_site_combo.get()
         if not site: return
         prefix = self.title_prefix_var.get()
         suffix = self.title_suffix_var.get()
+        wm_file = self.wm_file_combo.get()
         
         if "mockup_sets" not in self.config_data:
             self.config_data["mockup_sets"] = {}
@@ -308,11 +346,13 @@ class KTBCrawlerGUI(tk.Tk):
             
         self.config_data["mockup_sets"][site]["title_prefix_to_add"] = prefix
         self.config_data["mockup_sets"][site]["title_suffix_to_add"] = suffix
-        
+        if wm_file:
+            self.config_data["mockup_sets"][site]["watermark_file"] = wm_file
+            
         try:
             with open(CONFIG_PATH, 'w', encoding='utf-8') as f:
                 json.dump(self.config_data, f, indent=4, ensure_ascii=False)
-            messagebox.showinfo("Thành công", f"Đã lưu Prefix/Suffix cho site {site}!")
+            messagebox.showinfo("Thành công", f"Đã lưu cấu hình riêng cho site {site}!")
         except Exception as e:
             messagebox.showerror("Lỗi", f"Không thể lưu config: {e}")
 
