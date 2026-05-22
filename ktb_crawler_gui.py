@@ -184,8 +184,10 @@ class KTBCrawlerGUI(tk.Tk):
         
         if github_raw_url:
             print(f"Đang đồng bộ danh sách URL từ GitHub: {github_raw_url}")
+            import time
+            bypassed_url = f"{github_raw_url}?t={int(time.time())}"
             try:
-                r = requests.get(github_raw_url, timeout=10)
+                r = requests.get(bypassed_url, timeout=10)
                 if r.status_code == 200:
                     with open(GLOBAL_URL_FILE, 'w', encoding='utf-8') as f:
                         f.write(r.text)
