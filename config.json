@@ -1,0 +1,2379 @@
+{
+    "output_sites": [
+        "printiment",
+        "whatwillwear",
+        "vflippa"
+    ],
+    "defaults": {
+        "global_output_format": "webp",
+        "github_raw_url": "https://raw.githubusercontent.com/chanktb/ktb-crawler/main/all_image_urls.txt",
+        "exif_defaults": {
+            "Make": "Canon",
+            "Model": "Canon EOS R5",
+            "Software": "Adobe Photoshop 25.0",
+            "FNumber": [
+                8,
+                1
+            ],
+            "ExposureTime": [
+                1,
+                125
+            ],
+            "ISOSpeedRatings": 100,
+            "FocalLength": [
+                50,
+                1
+            ],
+            "GPSLatitude": 33.7465515,
+            "GPSLongitude": -118.0297799
+        },
+        "title_clean_keywords": [
+            "Ceramic-Ornament-Ceramic-Mug-Poster-and-Classic-Dad-Cap",
+            "Orament-Christmas-den",
+            "Ornament-X-Mas-2024",
+            "Ornament-poster-black",
+            "Ornament-Circle-Black-Ornament",
+            "Ornament-Circle-White-Ornament",
+            "Orament-X-mas",
+            "Mug-and-Ornament",
+            "Longsleeve-Shirt",
+            "T-shirts-shirt",
+            "t-shirt-white",
+            "t-shirt-black",
+            "Posters-black",
+            "Posters-white",
+            "black-poster",
+            "white-poster",
+            "long-sleeve",
+            "long-sleve",
+            "poster-portrait",
+            "Poster-Canvas",
+            "ladies-tee",
+            "v-neck",
+            "t-shirt_classic",
+            "shirt_classic",
+            "shirts-men-shirt",
+            "White-Ornaments",
+            "ornament-white",
+            "white-shirt",
+            "Mens-White-Tee",
+            "classic-mens",
+            "men-shirt",
+            "sweatshirt",
+            "t-shirts",
+            "t-shirt",
+            "Shirt-Black0",
+            "tshirt",
+            "Ladies",
+            "sweater",
+            "hoodie",
+            "Official",
+            "ornament",
+            "poster",
+            "shirt",
+            "Original",
+            "Originals",
+            "Unisex",
+            "Blackshirt",
+            "mug",
+            "Two-Sided",
+            "2-Sided",
+            "Two-Side",
+            "2-Side",
+            "sided",
+            "shirt0"
+        ],
+        "global_skip_keywords": [
+            "Two-Sided",
+            "2-Sided",
+            "Two-Side",
+            "2-Side",
+            "sided",
+            "side",
+            "Front-Back",
+            "2-sdied",
+            "Front",
+            "Sides"
+        ],
+        "remote_queue_dir": "/home/khue/ktb_tmp_uploads",
+        "default_user_author": "hue"
+    },
+    "mockup_sets": {
+        "printiment": {
+            "white": [
+                {
+                    "file": "printiment_white.jpg",
+                    "coords": {
+                        "x": 441,
+                        "y": 340,
+                        "w": 361,
+                        "h": 446
+                    }
+                },
+                {
+                    "file": "printiment_white_1.jpg",
+                    "coords": {
+                        "x": 309,
+                        "y": 256,
+                        "w": 386,
+                        "h": 445
+                    }
+                }
+            ],
+            "black": [
+                {
+                    "file": "printiment_black.jpg",
+                    "coords": {
+                        "x": 441,
+                        "y": 340,
+                        "w": 361,
+                        "h": 446
+                    }
+                },
+                {
+                    "file": "printiment_black_1.jpg",
+                    "coords": {
+                        "x": 309,
+                        "y": 256,
+                        "w": 386,
+                        "h": 445
+                    }
+                }
+            ],
+            "watermark_text": "",
+            "title_prefix_to_add": "",
+            "title_suffix_to_add": "Tshirts Sweater Hoodie",
+            "vps_secret_prefix": "PRINTIMENT",
+            "wp_path": "/home/printiment.com/public_html"
+        },
+        "whatwillwear": {
+            "white": [
+                {
+                    "file": "whatwillwear_white.jpg",
+                    "coords": {
+                        "x": 309,
+                        "y": 256,
+                        "w": 386,
+                        "h": 445
+                    }
+                },
+                {
+                    "file": "whatwillwear_white_1.jpg",
+                    "coords": {
+                        "x": 376,
+                        "y": 305,
+                        "w": 416,
+                        "h": 533
+                    }
+                }
+            ],
+            "black": [
+                {
+                    "file": "whatwillwear_black.jpg",
+                    "coords": {
+                        "x": 309,
+                        "y": 256,
+                        "w": 386,
+                        "h": 445
+                    }
+                },
+                {
+                    "file": "whatwillwear_black_1.jpg",
+                    "coords": {
+                        "x": 376,
+                        "y": 305,
+                        "w": 416,
+                        "h": 533
+                    }
+                }
+            ],
+            "watermark_text": "",
+            "title_prefix_to_add": "",
+            "title_suffix_to_add": "Shirts",
+            "vps_secret_prefix": "WHATWILLWEAR",
+            "wp_path": "/home/whatwillwear.com/public_html"
+        },
+        "ktbtee": {
+            "white": [
+                {
+                    "file": "ktbtee_white.webp",
+                    "coords": {
+                        "x": 362,
+                        "y": 254,
+                        "w": 424,
+                        "h": 582
+                    }
+                },
+                {
+                    "file": "ktbtee_white_1.jpg",
+                    "coords": {
+                        "x": 358,
+                        "y": 240,
+                        "w": 469,
+                        "h": 583
+                    }
+                }
+            ],
+            "black": [
+                {
+                    "file": "ktbtee_black.webp",
+                    "coords": {
+                        "x": 362,
+                        "y": 254,
+                        "w": 424,
+                        "h": 582
+                    }
+                },
+                {
+                    "file": "ktbtee_black_1.jpg",
+                    "coords": {
+                        "x": 358,
+                        "y": 240,
+                        "w": 469,
+                        "h": 583
+                    }
+                }
+            ],
+            "watermark_text": "",
+            "title_prefix_to_add": "Official",
+            "title_suffix_to_add": "T Shirt Sweatshirt",
+            "vps_secret_prefix": "KTBTEE",
+            "wp_path": "/home/ktbtee.com/public_html"
+        },
+        "albumcoverprint": {
+            "white": [
+                {
+                    "file": "albumcoverprint_white.jpg",
+                    "coords": {
+                        "x": 358,
+                        "y": 240,
+                        "w": 469,
+                        "h": 583
+                    }
+                },
+                {
+                    "file": "albumcoverprint_white_1.jpg",
+                    "coords": {
+                        "x": 378,
+                        "y": 278,
+                        "w": 413,
+                        "h": 525
+                    }
+                }
+            ],
+            "black": [
+                {
+                    "file": "albumcoverprint_black.jpg",
+                    "coords": {
+                        "x": 358,
+                        "y": 240,
+                        "w": 469,
+                        "h": 583
+                    }
+                },
+                {
+                    "file": "albumcoverprint_black_1.jpg",
+                    "coords": {
+                        "x": 378,
+                        "y": 278,
+                        "w": 413,
+                        "h": 525
+                    }
+                }
+            ],
+            "watermark_text": "",
+            "title_prefix_to_add": "Original",
+            "title_suffix_to_add": "T Shirt Sweater",
+            "vps_secret_prefix": "ALBUMCOVERPRINT",
+            "wp_path": "/home/albumcoverprint.com/public_html"
+        },
+        "amertee": {
+            "white": [
+                {
+                    "file": "amertee_white.jpg",
+                    "coords": {
+                        "x": 373,
+                        "y": 240,
+                        "w": 447,
+                        "h": 601
+                    }
+                },
+                {
+                    "file": "amertee_white_1.jpg",
+                    "coords": {
+                        "x": 395,
+                        "y": 291,
+                        "w": 378,
+                        "h": 508
+                    }
+                }
+            ],
+            "black": [
+                {
+                    "file": "amertee_black.jpg",
+                    "coords": {
+                        "x": 373,
+                        "y": 240,
+                        "w": 447,
+                        "h": 601
+                    }
+                },
+                {
+                    "file": "amertee_black_1.jpg",
+                    "coords": {
+                        "x": 395,
+                        "y": 291,
+                        "w": 378,
+                        "h": 508
+                    }
+                }
+            ],
+            "watermark_text": "",
+            "title_prefix_to_add": "",
+            "title_suffix_to_add": "Premium Shirt Sweater",
+            "vps_secret_prefix": "AMERTEE",
+            "wp_path": "/home/amertee.com/public_html"
+        },
+        "vflippa": {
+            "white": [
+                {
+                    "file": "vflippa_white.jpg",
+                    "coords": {
+                        "x": 376,
+                        "y": 305,
+                        "w": 416,
+                        "h": 533
+                    }
+                }
+            ],
+            "black": [
+                {
+                    "file": "vflippa_black.jpg",
+                    "coords": {
+                        "x": 376,
+                        "y": 305,
+                        "w": 416,
+                        "h": 533
+                    }
+                }
+            ],
+            "watermark_text": "",
+            "title_prefix_to_add": "",
+            "title_suffix_to_add": "T Shirt",
+            "vps_secret_prefix": "VFLIPPA",
+            "wp_path": "/home/vflippa.com/public_html"
+        }
+    },
+    "domains": {
+        "teeworksusa.com": {
+            "rules": [
+                {
+                    "pattern": "-Posters-black.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear",
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 148,
+                        "y": 54,
+                        "w": 341,
+                        "h": 460
+                    }
+                },
+                {
+                    "pattern": "-Posters-white.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear",
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 163,
+                        "y": 29,
+                        "w": 281,
+                        "h": 386
+                    }
+                },
+                {
+                    "pattern": "-white-poster.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear",
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 409,
+                        "y": 206,
+                        "w": 970,
+                        "h": 1384
+                    }
+                },
+                {
+                    "pattern": "-poster.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear",
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 399,
+                        "y": 180,
+                        "w": 980,
+                        "h": 1405
+                    }
+                },
+                {
+                    "pattern": "-Mug-and-Ornament.jpg",
+                    "action": "skip",
+                    "mockup_sets_to_use": [
+                        "whatwillwear",
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 285,
+                        "y": 734,
+                        "w": 374,
+                        "h": 512
+                    }
+                },
+                {
+                    "pattern": "-White-Ornaments.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear",
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 352,
+                        "y": 330,
+                        "w": 523,
+                        "h": 506
+                    }
+                },
+                {
+                    "pattern": "-white-long-sleeve.jpg",
+                    "action": "skip"
+                },
+                {
+                    "pattern": "-long-sleeve.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear",
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 643,
+                        "y": 889,
+                        "w": 707,
+                        "h": 982
+                    }
+                },
+                {
+                    "pattern": "-white-shirt.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear",
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 275,
+                        "y": 536,
+                        "w": 416,
+                        "h": 502
+                    }
+                },
+                {
+                    "pattern": "-Posters-black.webp",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear",
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 148,
+                        "y": 54,
+                        "w": 341,
+                        "h": 460
+                    }
+                },
+                {
+                    "pattern": "-Posters-white.webp",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear",
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 163,
+                        "y": 29,
+                        "w": 281,
+                        "h": 386
+                    }
+                },
+                {
+                    "pattern": "-white-poster.webp",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear",
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 409,
+                        "y": 206,
+                        "w": 970,
+                        "h": 1384
+                    }
+                },
+                {
+                    "pattern": "-poster.webp",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear",
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 399,
+                        "y": 180,
+                        "w": 980,
+                        "h": 1405
+                    }
+                },
+                {
+                    "pattern": "-Mug-and-Ornament.webp",
+                    "action": "skip",
+                    "mockup_sets_to_use": [
+                        "whatwillwear",
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 285,
+                        "y": 734,
+                        "w": 374,
+                        "h": 512
+                    }
+                },
+                {
+                    "pattern": "-White-Ornaments.webp",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear",
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 352,
+                        "y": 330,
+                        "w": 523,
+                        "h": 506
+                    }
+                },
+                {
+                    "pattern": "-white-long-sleeve.webp",
+                    "action": "skip"
+                },
+                {
+                    "pattern": "-long-sleeve.webp",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear",
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 643,
+                        "y": 889,
+                        "w": 707,
+                        "h": 982
+                    }
+                },
+                {
+                    "pattern": "-white-shirt.webp",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear",
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 275,
+                        "y": 536,
+                        "w": 416,
+                        "h": 502
+                    }
+                }
+            ],
+            "base_url": "https://teeworksusa.com/",
+            "image_url_selector": "div.product-images img",
+            "source_type": "product-list",
+            "replacements": [
+                "-Posters-black.jpg",
+                "-Posters-white.jpg",
+                "-White-poster.jpg",
+                "-white-poster.jpg",
+                "-poster.jpg",
+                "-Mug-and-Ornament.jpg",
+                "-mug.jpg",
+                "-White-Ornaments.jpg",
+                "-white-shirt.jpg",
+                "-long-sleeve.jpg",
+                "-Posters-black.webp",
+                "-Posters-white.webp",
+                "-White-poster.webp",
+                "-white-poster.webp",
+                "-poster.webp",
+                "-Mug-and-Ornament.webp",
+                "-mug.webp",
+                "-White-Ornaments.webp",
+                "-white-shirt.webp",
+                "-long-sleeve.webp"
+            ],
+            "fallback_rules": {
+                "type": "cut_filename_prefix",
+                "domain": "images.teeworksusa.com",
+                "prefix_length": 9
+            },
+            "check_recency": true,
+            "product_url_selector": "a.porto-tb-link",
+            "max_days_old": 1
+        },
+        "techteesusa.com": {
+            "output_mode": "zip",
+            "rules": [
+                {
+                    "pattern": "-T-Shirt.jpg",
+                    "action": "skip",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 204,
+                        "y": 196,
+                        "w": 432,
+                        "h": 504
+                    }
+                },
+                {
+                    "pattern": "-T-shirt.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 167,
+                        "y": 145,
+                        "w": 311,
+                        "h": 390
+                    }
+                },
+                {
+                    "pattern": "-T-shirt.webp",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 167,
+                        "y": 145,
+                        "w": 311,
+                        "h": 390
+                    }
+                },
+                {
+                    "pattern": "-circle.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 185,
+                        "y": 171,
+                        "w": 428,
+                        "h": 485
+                    }
+                },
+                {
+                    "pattern": "-poster.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords_white": {
+                        "x": 231,
+                        "y": 161,
+                        "w": 333,
+                        "h": 473
+                    },
+                    "coords_black": {
+                        "x": 320,
+                        "y": 173,
+                        "w": 336,
+                        "h": 446
+                    },
+                    "color_sample_coords": {
+                        "x": 554,
+                        "y": 162,
+                        "w": 10,
+                        "h": 5
+                    }
+                }
+            ],
+            "base_url": "https://techteesusa.com/",
+            "image_url_selector": "div.product-gallery img",
+            "replacements": [
+                "-circle.jpg",
+                "-poster.jpg"
+            ],
+            "source_type": "html-images",
+            "check_recency": true,
+            "fallback_rules": {
+                "type": "cut_filename_prefix",
+                "domain": "images.techteesusa.com",
+                "prefix_length": 9
+            },
+            "product_url_selector": ".woocommerce-LoopProduct-link",
+            "max_days_old": 1
+        },
+        "meredpremium.com": {
+            "rules": [
+                {
+                    "pattern": "-Shirt.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords_white": {
+                        "x": 307,
+                        "y": 210,
+                        "w": 451,
+                        "h": 502
+                    },
+                    "coords_black": {
+                        "x": 234,
+                        "y": 206,
+                        "w": 485,
+                        "h": 497
+                    },
+                    "color_sample_coords": {
+                        "x": 754,
+                        "y": 110,
+                        "w": 70,
+                        "h": 36
+                    }
+                },
+                {
+                    "pattern": "-Shirt.webp",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords_white": {
+                        "x": 307,
+                        "y": 210,
+                        "w": 451,
+                        "h": 502
+                    },
+                    "coords_black": {
+                        "x": 234,
+                        "y": 206,
+                        "w": 485,
+                        "h": 497
+                    },
+                    "color_sample_coords": {
+                        "x": 754,
+                        "y": 110,
+                        "w": 70,
+                        "h": 36
+                    }
+                }
+            ],
+            "base_url": "https://meredpremium.com/",
+            "source_type": "html-images",
+            "first_product_selector": ".product-small a.woocommerce-LoopProduct-link",
+            "next_product_selector": "a:has(i.icon-angle-right)",
+            "product_url_selector": ".row.large-columns-4.medium-columns-3.small-columns-2.row-small.slider.row-slider.slider-nav-reveal.slider-nav-push a.woocommerce-LoopProduct-link.woocommerce-loop-product__link",
+            "max_days_old": 1,
+            "image_url_selector": "img"
+        },
+        "geekteesus.com": {
+            "rules": [
+                {
+                    "pattern": "-Ornament-poster-black.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 135,
+                        "y": 95,
+                        "w": 401,
+                        "h": 603
+                    }
+                },
+                {
+                    "pattern": "-Orament-X-mas-den.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 252,
+                        "y": 320,
+                        "w": 440,
+                        "h": 514
+                    }
+                },
+                {
+                    "pattern": "-Orament-Christmas.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 303,
+                        "y": 315,
+                        "w": 449,
+                        "h": 488
+                    }
+                },
+                {
+                    "pattern": "-v-neck-t-shirt.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 293,
+                        "y": 237,
+                        "w": 359,
+                        "h": 431
+                    },
+                    "color_sample_coords": {
+                        "x": 792,
+                        "y": 812,
+                        "w": 28,
+                        "h": 25
+                    },
+                    "skipWhite": true
+                },
+                {
+                    "pattern": "-T-shirt.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 267,
+                        "y": 179,
+                        "w": 386,
+                        "h": 458
+                    }
+                }
+            ],
+            "base_url": "https://geekteesus.com/trending-t-shirt/",
+            "image_url_selector": "div.product-images img",
+            "replacements": [
+                "-Orament-X-mas-den.jpg",
+                "-Orament-Christmas.jpg",
+                "-Ornament-poster-black.jpg",
+                "-v-neck-t-shirt.jpg"
+            ],
+            "source_type": "html-images",
+            "check_recency": true,
+            "product_url_selector": ".woocommerce-LoopProduct-link",
+            "max_days_old": 1
+        },
+        "teeextra.com": {
+            "output_mode": "zip",
+            "rules": [
+                {
+                    "pattern": "-Ornament.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords_white": {
+                        "x": 289,
+                        "y": 259,
+                        "w": 453,
+                        "h": 510
+                    },
+                    "coords_black": {
+                        "x": 294,
+                        "y": 255,
+                        "w": 437,
+                        "h": 517
+                    },
+                    "color_sample_coords": {
+                        "x": 587,
+                        "y": 240,
+                        "w": 9,
+                        "h": 9
+                    }
+                },
+                {
+                    "pattern": "-T-shirt-Black.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 490,
+                        "y": 347,
+                        "w": 291,
+                        "h": 397
+                    },
+                    "angle": 3
+                },
+                {
+                    "pattern": "-T-shirt-White.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 459,
+                        "y": 296,
+                        "w": 311,
+                        "h": 468
+                    },
+                    "angle": 3
+                },
+                {
+                    "pattern": "-T-shirt.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 262,
+                        "y": 253,
+                        "w": 574,
+                        "h": 657
+                    }
+                }
+            ],
+            "base_url": "https://teeextra.com/",
+            "image_url_selector": "div.product-images img",
+            "replacements": [
+                "-Ornament.jpg",
+                "-Shirt.jpg"
+            ],
+            "source_type": "html-images",
+            "fallback_rules": {
+                "type": "cut_filename_prefix",
+                "domain": "images.teeextra.com",
+                "prefix_length": 9
+            },
+            "check_recency": true,
+            "product_url_selector": ".woocommerce-LoopProduct-link",
+            "max_days_old": 1
+        },
+        "teespix.com": {
+            "rules": [
+                {
+                    "pattern": "-Shirt.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 261,
+                        "y": 182,
+                        "w": 384,
+                        "h": 499
+                    }
+                }
+            ],
+            "base_url": "https://teespix.com/",
+            "source_type": "html-images",
+            "fallback_rules": {
+                "type": "cut_filename_prefix",
+                "domain": "images.teespix.com",
+                "prefix_length": 9
+            },
+            "check_recency": true,
+            "product_url_selector": "a.woocommerce-LoopProduct-link",
+            "max_days_old": 1,
+            "image_url_selector": "img"
+        },
+        "nowbestshirt.com": {
+            "output_mode": "zip",
+            "rules": [
+                {
+                    "pattern": "-sweater.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 321,
+                        "y": 293,
+                        "w": 382,
+                        "h": 487
+                    }
+                },
+                {
+                    "pattern": "-sweater.webp",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 321,
+                        "y": 293,
+                        "w": 382,
+                        "h": 487
+                    }
+                },
+                {
+                    "pattern": "-ornament-ornament.webp",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords_white": {
+                        "x": 258,
+                        "y": 347,
+                        "w": 476,
+                        "h": 574
+                    },
+                    "coords_black": {
+                        "x": 235,
+                        "y": 437,
+                        "w": 532,
+                        "h": 547
+                    },
+                    "color_sample_coords": {
+                        "x": 457,
+                        "y": 320,
+                        "w": 15,
+                        "h": 12
+                    }
+                },
+                {
+                    "pattern": "-ornament-ornament.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 253,
+                        "y": 430,
+                        "w": 481,
+                        "h": 585
+                    },
+                    "angle": -12
+                },
+                {
+                    "pattern": "-Ornament-ornament.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 258,
+                        "y": 334,
+                        "w": 471,
+                        "h": 595
+                    },
+                    "angle": 2
+                }
+            ],
+            "base_url": "https://nowbestshirt.com/",
+            "image_url_selector": "div.product-images img",
+            "replacements": [
+                "-sweater.jpg"
+            ],
+            "source_type": "product-list",
+            "fallback_rules": {
+                "type": "cut_filename_prefix",
+                "domain": "images.nowbestshirt.com",
+                "prefix_length": 9
+            },
+            "check_recency": true,
+            "product_url_selector": ".row.large-columns-5.medium-columns-3.small-columns-2.row-small.slider.row-slider.slider-nav-reveal a.woocommerce-LoopProduct-link.woocommerce-loop-product__link",
+            "max_days_old": 1
+        },
+        "hoopoetees.com": {
+            "output_mode": "zip",
+            "rules": [
+                {
+                    "pattern": "-ladies-tee.webp",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 309,
+                        "y": 174,
+                        "w": 389,
+                        "h": 458
+                    }
+                },
+                {
+                    "pattern": "-ornament.webp",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 232,
+                        "y": 196,
+                        "w": 571,
+                        "h": 619
+                    }
+                },
+                {
+                    "pattern": "-shirt.webp",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 272,
+                        "y": 107,
+                        "w": 460,
+                        "h": 587
+                    }
+                }
+            ],
+            "base_url": "https://hoopoetees.com/",
+            "replacements": {
+                "-hoodie.webp": [
+                    "-ladies-tee.webp"
+                ],
+                "-shirt.webp": [
+                    "-ornament.webp"
+                ]
+            },
+            "source_type": "api",
+            "fallback_rules": {
+                "type": "cut_filename_prefix",
+                "domain": "images.hoopoetees.com",
+                "prefix_length": 9
+            },
+            "max_days_old": 1
+        },
+        "clickoneshirt.com": {
+            "output_mode": "folder",
+            "rules": [
+                {
+                    "pattern": "-Woman-T-shirt.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords_white": {
+                        "x": 303,
+                        "y": 219,
+                        "w": 434,
+                        "h": 544
+                    },
+                    "coords_black": {
+                        "x": 386,
+                        "y": 207,
+                        "w": 413,
+                        "h": 475
+                    },
+                    "color_sample_coords": {
+                        "x": 546,
+                        "y": 141,
+                        "w": 17,
+                        "h": 9
+                    }
+                },
+                {
+                    "pattern": "-Ornament.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords_white": {
+                        "x": 291,
+                        "y": 277,
+                        "w": 411,
+                        "h": 481
+                    },
+                    "coords_black": {
+                        "x": 320,
+                        "y": 256,
+                        "w": 386,
+                        "h": 504
+                    },
+                    "color_sample_coords": {
+                        "x": 200,
+                        "y": 461,
+                        "w": 27,
+                        "h": 30
+                    }
+                },
+                {
+                    "pattern": "-t-shirt-white.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 319,
+                        "y": 267,
+                        "w": 373,
+                        "h": 468
+                    }
+                },
+                {
+                    "pattern": "-t-shirt-black.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 321,
+                        "y": 258,
+                        "w": 450,
+                        "h": 550
+                    }
+                }
+            ],
+            "base_url": "https://clickoneshirt.com/",
+            "replacements": {
+                "-Sweater.jpg": [
+                    "-Woman-T-shirt.jpg"
+                ],
+                "-Hoodie.jpg": [
+                    "-Woman-T-shirt.jpg"
+                ],
+                "-Ladies-Tee.jpg": [
+                    "-Woman-T-shirt.jpg"
+                ],
+                "-hoodie-white.jpg": [
+                    "-t-shirt-white.jpg"
+                ],
+                "-hoodie-black.jpg": [
+                    "-t-shirt-black.jpg"
+                ]
+            },
+            "source_type": "api",
+            "fallback_rules": {
+                "type": "cut_filename_prefix",
+                "domain": "images.clickoneshirt.com",
+                "prefix_length": 9
+            },
+            "max_days_old": 1
+        },
+        "teeslocal.com": {
+            "rules": [
+                {
+                    "pattern": "-T-shirt.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 337,
+                        "y": 169,
+                        "w": 455,
+                        "h": 568
+                    }
+                }
+            ],
+            "base_url": "https://teeslocal.com/t-shirts/",
+            "image_url_selector": "div.product-images img",
+            "fallback_rules": {
+                "type": "cut_filename_prefix",
+                "domain": "images.teeslocal.com",
+                "prefix_length": 9
+            },
+            "source_type": "html-images",
+            "check_recency": true,
+            "product_url_selector": ".woocommerce-LoopProduct-link",
+            "max_days_old": 1
+        },
+        "uscraftedtees.com": {
+            "rules": [
+                {
+                    "pattern": "-Shirt.webp",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 172,
+                        "y": 172,
+                        "w": 324,
+                        "h": 366
+                    }
+                },
+                {
+                    "pattern": "-Shirt.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 172,
+                        "y": 172,
+                        "w": 324,
+                        "h": 366
+                    }
+                }
+            ],
+            "base_url": "https://uscraftedtees.com/",
+            "source_type": "api",
+            "max_days_old": 1
+        },
+        "melonashirt.com": {
+            "rules": [
+                {
+                    "pattern": "-men-shirt.webp",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 220,
+                        "y": 120,
+                        "w": 321,
+                        "h": 435
+                    }
+                },
+                {
+                    "pattern": "-men-shirt.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 220,
+                        "y": 120,
+                        "w": 321,
+                        "h": 435
+                    }
+                }
+            ],
+            "base_url": "https://melonashirt.com/",
+            "replacements": {
+                "-t-shirt.jpg": [
+                    "-men-shirt.jpg"
+                ],
+                "-women-shirt.jpg": [
+                    "-men-shirt.jpg"
+                ],
+                "-t-shirt.webp": [
+                    "-men-shirt.webp"
+                ],
+                "-shirt.jpg": [
+                    "-men-shirt.jpg"
+                ],
+                "-shirt.webp": [
+                    "-men-shirt.webp"
+                ]
+            },
+            "source_type": "api",
+            "max_days_old": 1
+        },
+        "dalatshirt.com": {
+            "output_mode": "zip",
+            "rules": [
+                {
+                    "pattern": "-mug.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords_white": {
+                        "x": 135,
+                        "y": 21,
+                        "w": 237,
+                        "h": 342
+                    },
+                    "coords_black": {
+                        "x": 190,
+                        "y": 102,
+                        "w": 204,
+                        "h": 237
+                    },
+                    "color_sample_coords": {
+                        "x": 283,
+                        "y": 356,
+                        "w": 9,
+                        "h": 3
+                    }
+                },
+                {
+                    "pattern": "-Longsleeve-Shirt.jpg",
+                    "action": "skip",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords_white": {
+                        "x": 292,
+                        "y": 479,
+                        "w": 377,
+                        "h": 503
+                    },
+                    "coords_black": {
+                        "x": 309,
+                        "y": 536,
+                        "w": 362,
+                        "h": 433
+                    },
+                    "erase_zones": [
+                        {
+                            "x": 230,
+                            "y": 581,
+                            "w": 98,
+                            "h": 62
+                        },
+                        {
+                            "x": 191,
+                            "y": 617,
+                            "w": 152,
+                            "h": 40
+                        }
+                    ],
+                    "color_sample_coords": {
+                        "x": 604,
+                        "y": 440,
+                        "w": 42,
+                        "h": 25
+                    }
+                },
+                {
+                    "pattern": "-Shirt.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 405,
+                        "y": 151,
+                        "w": 320,
+                        "h": 400
+                    }
+                },
+                {
+                    "pattern": "-black-shirt.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 247,
+                        "y": 167,
+                        "w": 413,
+                        "h": 489
+                    }
+                },
+                {
+                    "pattern": "-white-shirt.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 247,
+                        "y": 167,
+                        "w": 413,
+                        "h": 489
+                    }
+                },
+                {
+                    "pattern": "-t-shirt.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords_white": {
+                        "x": 320,
+                        "y": 680,
+                        "w": 385,
+                        "h": 451
+                    },
+                    "coords_black": {
+                        "x": 288,
+                        "y": 571,
+                        "w": 399,
+                        "h": 518
+                    },
+                    "color_sample_coords": {
+                        "x": 543,
+                        "y": 1097,
+                        "w": 49,
+                        "h": 14
+                    }
+                }
+            ],
+            "base_url": "https://dalatshirt.com/",
+            "replacements": {
+                "-white-shirt.jpg": [
+                    "-Shirt.jpg"
+                ],
+                "-black-shirt.jpg": [
+                    "-Shirt.jpg"
+                ],
+                "-shirt.jpg": [
+                    "-mug.jpg"
+                ]
+            },
+            "fallback_rules": {
+                "type": "cut_filename_prefix",
+                "domain": "images.dalatshirt.com",
+                "prefix_length": 9
+            },
+            "source_type": "api",
+            "max_days_old": 1
+        },
+        "lovingsquad.com": {
+            "rules": [
+                {
+                    "pattern": "-Ladies-tee.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 341,
+                        "y": 155,
+                        "w": 366,
+                        "h": 443
+                    }
+                },
+                {
+                    "pattern": "-Sweater.jpg",
+                    "action": "skip",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 401,
+                        "y": 185,
+                        "w": 359,
+                        "h": 458
+                    }
+                },
+                {
+                    "pattern": "-Ladies.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords_white": {
+                        "x": 317,
+                        "y": 206,
+                        "w": 364,
+                        "h": 460
+                    },
+                    "coords_black": {
+                        "x": 295,
+                        "y": 210,
+                        "w": 372,
+                        "h": 506
+                    },
+                    "color_sample_coords": {
+                        "x": 462,
+                        "y": 740,
+                        "w": 60,
+                        "h": 36
+                    }
+                },
+                {
+                    "pattern": "-Shirt.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords_white": {
+                        "x": 301,
+                        "y": 595,
+                        "w": 437,
+                        "h": 552
+                    },
+                    "coords_black": {
+                        "x": 231,
+                        "y": 455,
+                        "w": 497,
+                        "h": 562
+                    },
+                    "color_sample_coords": {
+                        "x": 477,
+                        "y": 1195,
+                        "w": 65,
+                        "h": 18
+                    }
+                },
+                {
+                    "pattern": "-Ornament-Ornament.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords_white": {
+                        "x": 301,
+                        "y": 336,
+                        "w": 424,
+                        "h": 506
+                    }
+                }
+            ],
+            "base_url": "https://lovingsquad.com/",
+            "replacements": {
+                "-T-shirt.jpg": [
+                    "-Ladies.jpg",
+                    "-Ladies-tee.jpg",
+                    "-Sweater.jpg"
+                ],
+                "-Shirt.jpg": [
+                    "-Ladies.jpg",
+                    "-Ladies-tee.jpg"
+                ]
+            },
+            "fallback_rules": {
+                "type": "cut_filename_prefix",
+                "domain": "images.lovingsquad.com",
+                "prefix_length": 9
+            },
+            "source_type": "api",
+            "max_days_old": 1
+        },
+        "designatshop.com": {
+            "output_mode": "zip",
+            "rules": [
+                {
+                    "pattern": "-t-shirt.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 121,
+                        "y": 232,
+                        "w": 435,
+                        "h": 479
+                    },
+                    "erase_zones": [
+                        {
+                            "x": 526,
+                            "y": 223,
+                            "w": 52,
+                            "h": 186
+                        }
+                    ]
+                },
+                {
+                    "pattern": "-shirt.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 281,
+                        "y": 225,
+                        "w": 479,
+                        "h": 610
+                    }
+                },
+                {
+                    "pattern": "-shirtblack.jpg",
+                    "action": "skip",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 320,
+                        "y": 356,
+                        "w": 388,
+                        "h": 503
+                    },
+                    "skipBlack": true
+                },
+                {
+                    "pattern": "-sweater.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 98,
+                        "y": 268,
+                        "w": 401,
+                        "h": 431
+                    }
+                }
+            ],
+            "base_url": "https://designatshop.com/",
+            "replacements": {
+                "-sweater.jpg": [
+                    "-shirt.jpg"
+                ],
+                "-hoodie.jpg": [
+                    "-shirt.jpg"
+                ]
+            },
+            "fallback_rules": {
+                "type": "cut_filename_prefix",
+                "domain": "images.lovingsquad.com",
+                "prefix_length": 9
+            },
+            "source_type": "api",
+            "max_days_old": 1
+        },
+        "eteeshirts.com": {
+            "rules": [
+                {
+                    "pattern": "-sweater.webp",
+                    "action": "skip",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 319,
+                        "y": 214,
+                        "w": 370,
+                        "h": 405
+                    },
+                    "color_sample_coords": {
+                        "x": 295,
+                        "y": 884,
+                        "w": 17,
+                        "h": 15
+                    },
+                    "angle": -3,
+                    "skipWhite": true
+                },
+                {
+                    "pattern": "-shirt.webp",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords_white": {
+                        "x": 286,
+                        "y": 652,
+                        "w": 415,
+                        "h": 467
+                    },
+                    "coords_black": {
+                        "x": 300,
+                        "y": 769,
+                        "w": 399,
+                        "h": 437
+                    },
+                    "color_sample_coords": {
+                        "x": 411,
+                        "y": 1220,
+                        "w": 26,
+                        "h": 14
+                    }
+                }
+            ],
+            "base_url": "https://eteeshirts.com/",
+            "image_url_selector": "div.product-images img",
+            "fallback_rules": {
+                "type": "cut_filename_prefix",
+                "domain": "images.eteeshirts.com",
+                "prefix_length": 9
+            },
+            "source_type": "html-images",
+            "product_url_selector": ".woocommerce-LoopProduct-link",
+            "max_days_old": 1
+        },
+        "milkywayshirt.com": {
+            "rules": [
+                {
+                    "pattern": "-Shirt.webp",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 274,
+                        "y": 173,
+                        "w": 447,
+                        "h": 523
+                    }
+                }
+            ],
+            "base_url": "https://milkywayshirt.com/",
+            "image_url_selector": "div.product-images img",
+            "replacements": [
+                "-Shirt.webp",
+                "-Long-Sleeve.webp"
+            ],
+            "source_type": "html-images",
+            "product_url_selector": ".product-small a.woocommerce-LoopProduct-link",
+            "max_days_old": 1
+        },
+        "serenashirt.com": {
+            "output_mode": "zip",
+            "rules": [
+                {
+                    "pattern": "-sweater.jpg",
+                    "action": "skip",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords_white": {
+                        "x": 139,
+                        "y": 160,
+                        "w": 433,
+                        "h": 579
+                    },
+                    "coords_black": {
+                        "x": 139,
+                        "y": 160,
+                        "w": 433,
+                        "h": 579
+                    },
+                    "color_sample_coords": {
+                        "x": 539,
+                        "y": 72,
+                        "w": 53,
+                        "h": 28
+                    }
+                },
+                {
+                    "pattern": "-sweaterold.jpg",
+                    "action": "skip",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 208,
+                        "y": 241,
+                        "w": 327,
+                        "h": 403
+                    }
+                },
+                {
+                    "pattern": "-ornament-Ornaments.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 317,
+                        "y": 253,
+                        "w": 382,
+                        "h": 442
+                    }
+                }
+            ],
+            "base_url": "https://serenashirt.com/",
+            "image_url_selector": "div.product-images img",
+            "replacements": [
+                "-sweater.jpg",
+                "-ornament-Ornaments.jpg"
+            ],
+            "source_type": "html-images",
+            "fallback_rules": {
+                "type": "cut_filename_prefix",
+                "domain": "images.serenashirt.com",
+                "prefix_length": 9
+            },
+            "check_recency": true,
+            "product_url_selector": ".woocommerce-LoopProduct-link",
+            "max_days_old": 1
+        },
+        "teehandus.com": {
+            "output_mode": "zip",
+            "rules": [
+                {
+                    "pattern": "-Sweater.jpg",
+                    "action": "skip",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords_white": {
+                        "x": 282,
+                        "y": 237,
+                        "w": 419,
+                        "h": 533
+                    },
+                    "coords_black": {
+                        "x": 282,
+                        "y": 237,
+                        "w": 419,
+                        "h": 533
+                    },
+                    "color_sample_coords": {
+                        "x": 468,
+                        "y": 193,
+                        "w": 76,
+                        "h": 36
+                    }
+                },
+                {
+                    "pattern": "-sweater.jpg",
+                    "action": "skip",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords_white": {
+                        "x": 80,
+                        "y": 204,
+                        "w": 341,
+                        "h": 409
+                    },
+                    "coords_black": {
+                        "x": 95,
+                        "y": 204,
+                        "w": 318,
+                        "h": 392
+                    },
+                    "color_sample_coords": {
+                        "x": 89,
+                        "y": 162,
+                        "w": 42,
+                        "h": 25
+                    }
+                },
+                {
+                    "pattern": "-t-shirt.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 304,
+                        "y": 231,
+                        "w": 401,
+                        "h": 548
+                    }
+                },
+                {
+                    "pattern": "-Ceramic-Ornament-Ceramic-Mug-Poster-and-Classic-Dad-Cap.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "vflippa"
+                    ],
+                    "coords_white": {
+                        "x": 117,
+                        "y": 741,
+                        "w": 286,
+                        "h": 449
+                    },
+                    "coords_black": {
+                        "x": 102,
+                        "y": 753,
+                        "w": 315,
+                        "h": 434
+                    },
+                    "color_sample_coords": {
+                        "x": 758,
+                        "y": 1056,
+                        "w": 36,
+                        "h": 22
+                    }
+                },
+                {
+                    "pattern": "-ornament-ornament.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 274,
+                        "y": 332,
+                        "w": 434,
+                        "h": 546
+                    },
+                    "color_sample_coords": {
+                        "x": 377,
+                        "y": 271,
+                        "w": 40,
+                        "h": 27
+                    }
+                },
+                {
+                    "pattern": "-ornament-ornament-white.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 255,
+                        "y": 294,
+                        "w": 481,
+                        "h": 599
+                    },
+                    "color_sample_coords": {
+                        "x": 375,
+                        "y": 250,
+                        "w": 55,
+                        "h": 21
+                    }
+                }
+            ],
+            "base_url": "https://teehandus.com/",
+            "replacements": {
+                "-t-shirt.jpg": [
+                    "-sweater.jpg",
+                    "-Sweater.jpg"
+                ],
+                "-Hoodie.jpg": [
+                    "-t-shirt.jpg"
+                ],
+                "-hoodie.jpg": [
+                    "-sweater.jpg",
+                    "-Sweater.jpg"
+                ]
+            },
+            "source_type": "html-images",
+            "fallback_rules": {
+                "type": "cut_filename_prefix",
+                "domain": "images.teehandus.com",
+                "prefix_length": 9
+            },
+            "max_days_old": 1,
+            "product_url_selector": "a.woocommerce-LoopProduct-link",
+            "image_url_selector": "img"
+        },
+        "schmidtstee.com": {
+            "output_mode": "zip",
+            "rules": [
+                {
+                    "pattern": "-hoodie.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 315,
+                        "y": 467,
+                        "w": 331,
+                        "h": 428
+                    }
+                },
+                {
+                    "pattern": "-hoodie.webp",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 315,
+                        "y": 467,
+                        "w": 331,
+                        "h": 428
+                    }
+                },
+                {
+                    "pattern": "-Sweatshirt.webp",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 492,
+                        "y": 503,
+                        "w": 550,
+                        "h": 672
+                    }
+                },
+                {
+                    "pattern": "-Sweatshirt.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 512,
+                        "y": 479,
+                        "w": 559,
+                        "h": 691
+                    }
+                },
+                {
+                    "pattern": "-T-shirt.webp",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 511,
+                        "y": 510,
+                        "w": 806,
+                        "h": 908
+                    }
+                },
+                {
+                    "pattern": "-T-shirt.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 511,
+                        "y": 510,
+                        "w": 806,
+                        "h": 908
+                    }
+                },
+                {
+                    "pattern": "-Ladies.webp",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 638,
+                        "y": 764,
+                        "w": 560,
+                        "h": 628
+                    }
+                }
+            ],
+            "base_url": "https://schmidtstee.com/",
+            "replacements": {
+                "-tee.jpg": [
+                    "-T-shirt.jpg"
+                ],
+                "-tee.webp": [
+                    "-T-shirt.webp"
+                ],
+                "-sweatshirt.webp": [
+                    "-Ladies.webp"
+                ]
+            },
+            "fallback_rules": {
+                "type": "cut_filename_prefix",
+                "domain": "images.schmidtstee.com",
+                "prefix_length": 9
+            },
+            "source_type": "api",
+            "max_days_old": 1
+        },
+        "digitalhandmades.com": {
+            "output_mode": "zip",
+            "rules": [
+                {
+                    "pattern": "-Shirt.webp",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 325,
+                        "y": 280,
+                        "w": 600,
+                        "h": 589
+                    }
+                }
+            ],
+            "base_url": "https://digitalhandmades.com/",
+            "source_type": "html-images",
+            "attachment_prefix_filter": "Sweatshirt-",
+            "max_days_old": 1,
+            "product_url_selector": "a.woocommerce-LoopProduct-link"
+        },
+        "theteestudios.com": {
+            "output_mode": "zip",
+            "rules": [
+                {
+                    "pattern": "-shirt.jpg",
+                    "action": "skip",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 250,
+                        "y": 176,
+                        "w": 314,
+                        "h": 422
+                    }
+                },
+                {
+                    "pattern": "-T-shirts-Shirt.jpg",
+                    "action": "skip",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 242,
+                        "y": 155,
+                        "w": 333,
+                        "h": 430
+                    }
+                },
+                {
+                    "pattern": "-T-Shirts-Shirt.jpg",
+                    "action": "skip",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 242,
+                        "y": 155,
+                        "w": 333,
+                        "h": 430
+                    }
+                },
+                {
+                    "pattern": "-ornament.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords_white": {
+                        "x": 229,
+                        "y": 285,
+                        "w": 281,
+                        "h": 356
+                    },
+                    "coords_black": {
+                        "x": 211,
+                        "y": 182,
+                        "w": 358,
+                        "h": 438
+                    },
+                    "color_sample_coords": {
+                        "x": 364,
+                        "y": 674,
+                        "w": 20,
+                        "h": 7
+                    }
+                }
+            ],
+            "base_url": "https://theteestudios.com/",
+            "image_url_selector": "div.product-images img",
+            "replacements": [
+                "-ornament.jpg"
+            ],
+            "source_type": "html-images",
+            "product_url_selector": "a.woocommerce-LoopProduct-link",
+            "max_days_old": 1
+        },
+        "vanguardteesco.com": {
+            "rules": [
+                {
+                    "pattern": "",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 304,
+                        "y": 229,
+                        "w": 546,
+                        "h": 680
+                    }
+                }
+            ],
+            "base_url": "https://vanguardteesco.com/",
+            "source_type": "html-images",
+            "first_product_selector": ".product-small a.woocommerce-LoopProduct-link",
+            "next_product_selector": "a:has(i.icon-angle-right)",
+            "product_url_selector": ".woocommerce-LoopProduct-link",
+            "max_days_old": 1
+        },
+        "legendwearco.com": {
+            "output_mode": "zip",
+            "rules": [
+                {
+                    "pattern": "-Long-Sleve.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 281,
+                        "y": 147,
+                        "w": 399,
+                        "h": 520
+                    }
+                },
+                {
+                    "pattern": "-Ladies.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 301,
+                        "y": 149,
+                        "w": 375,
+                        "h": 492
+                    }
+                },
+                {
+                    "pattern": "-Ornament-Circle-Black-Ornament.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 338,
+                        "y": 406,
+                        "w": 360,
+                        "h": 408
+                    }
+                },
+                {
+                    "pattern": "-Ornament-Circle-White-Ornament.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "vflippa"
+                    ],
+                    "coords": {
+                        "x": 338,
+                        "y": 406,
+                        "w": 360,
+                        "h": 408
+                    }
+                }
+            ],
+            "base_url": "https://legendwearco.com/",
+            "image_url_selector": "div.product-images img",
+            "replacements": [
+                "-Long-Sleve.jpg",
+                "-Ladies.jpg"
+            ],
+            "source_type": "html-images",
+            "fallback_rules": {
+                "type": "cut_filename_prefix",
+                "domain": "images.legendusashirt.com",
+                "prefix_length": 9
+            },
+            "check_recency": true,
+            "product_url_selector": ".woocommerce-LoopProduct-link",
+            "max_days_old": 1
+        },
+        "wearitloudtee.com": {
+            "output_mode": "zip",
+            "rules": [
+                {
+                    "pattern": "-shirt.jpg",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 269,
+                        "y": 175,
+                        "w": 464,
+                        "h": 602
+                    }
+                },
+                {
+                    "pattern": "-Shirt.webp",
+                    "action": "generate",
+                    "mockup_sets_to_use": [
+                        "whatwillwear"
+                    ],
+                    "coords": {
+                        "x": 269,
+                        "y": 175,
+                        "w": 464,
+                        "h": 602
+                    }
+                }
+            ],
+            "base_url": "https://wearitloudtee.com/",
+            "fallback_rules": {
+                "type": "cut_filename_prefix",
+                "domain": "images.mercuryshirt.com",
+                "prefix_length": 9
+            },
+            "source_type": "api",
+            "max_days_old": 1
+        }
+    }
+}
