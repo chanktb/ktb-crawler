@@ -96,7 +96,8 @@
             "Sides"
         ],
         "remote_queue_dir": "/home/khue/ktb_tmp_uploads",
-        "default_user_author": "hue"
+        "default_user_author": "tran",
+        "wp_username": "tran"
     },
     "mockup_sets": {
         "printiment": {
@@ -144,7 +145,8 @@
             "title_prefix_to_add": "",
             "title_suffix_to_add": "Tshirts Sweater Hoodie",
             "vps_secret_prefix": "PRINTIMENT",
-            "wp_path": "/home/printiment.com/public_html"
+            "wp_path": "/home/printiment.com/public_html",
+            "watermark_file": "Không dùng (None)"
         },
         "whatwillwear": {
             "white": [
@@ -191,7 +193,8 @@
             "title_prefix_to_add": "",
             "title_suffix_to_add": "Shirts",
             "vps_secret_prefix": "WHATWILLWEAR",
-            "wp_path": "/home/whatwillwear.com/public_html"
+            "wp_path": "/home/whatwillwear.com/public_html",
+            "watermark_file": "Không dùng (None)"
         },
         "ktbtee": {
             "white": [
@@ -361,7 +364,8 @@
             "title_prefix_to_add": "",
             "title_suffix_to_add": "T Shirt",
             "vps_secret_prefix": "VFLIPPA",
-            "wp_path": "/home/vflippa.com/public_html"
+            "wp_path": "/home/vflippa.com/public_html",
+            "watermark_file": "Không dùng (None)"
         }
     },
     "domains": {
