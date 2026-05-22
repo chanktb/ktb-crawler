@@ -225,6 +225,28 @@ class KTBCrawlerGUI(tk.Tk):
         tk.Radiobutton(options_frame, text="JPG", variable=self.output_format_var, value="jpg", bg="#f0f0f0").pack(side=tk.LEFT)
         tk.Radiobutton(options_frame, text="WEBP", variable=self.output_format_var, value="webp", bg="#f0f0f0").pack(side=tk.LEFT)
         
+        title_frame = tk.LabelFrame(top_frame, text="3. Cấu hình Title (Tiền tố/Hậu tố)", bg="#f0f0f0")
+        title_frame.pack(side=tk.TOP, fill=tk.X, padx=10, pady=2)
+        
+        tk.Label(title_frame, text="Site:", bg="#f0f0f0").pack(side=tk.LEFT, padx=5)
+        self.title_site_combo = ttk.Combobox(title_frame, values=output_sites, state="readonly", width=15)
+        self.title_site_combo.pack(side=tk.LEFT, padx=5)
+        self.title_site_combo.bind("<<ComboboxSelected>>", self.on_title_site_selected)
+        
+        tk.Label(title_frame, text="Prefix:", bg="#f0f0f0").pack(side=tk.LEFT, padx=5)
+        self.title_prefix_var = tk.StringVar()
+        tk.Entry(title_frame, textvariable=self.title_prefix_var, width=15).pack(side=tk.LEFT, padx=5)
+        
+        tk.Label(title_frame, text="Suffix:", bg="#f0f0f0").pack(side=tk.LEFT, padx=5)
+        self.title_suffix_var = tk.StringVar()
+        tk.Entry(title_frame, textvariable=self.title_suffix_var, width=25).pack(side=tk.LEFT, padx=5)
+        
+        tk.Button(title_frame, text="Lưu Config", command=self.save_title_config, bg="#aaddaa").pack(side=tk.LEFT, padx=10)
+        
+        if output_sites:
+            self.title_site_combo.current(0)
+            self.on_title_site_selected(None)
+        
         nav_frame = tk.Frame(top_frame, bg="#f0f0f0")
         nav_frame.pack(side=tk.TOP, fill=tk.X, pady=5)
         
@@ -263,6 +285,36 @@ class KTBCrawlerGUI(tk.Tk):
             self.prev_image()
         else:
             self.next_image()
+        # Hiển thị ảnh đầu tiên
+        self.update_image_display()
+
+    def on_title_site_selected(self, event):
+        site = self.title_site_combo.get()
+        if site:
+            mockup_cfg = self.config_data.get("mockup_sets", {}).get(site, {})
+            self.title_prefix_var.set(mockup_cfg.get("title_prefix_to_add", ""))
+            self.title_suffix_var.set(mockup_cfg.get("title_suffix_to_add", ""))
+
+    def save_title_config(self):
+        site = self.title_site_combo.get()
+        if not site: return
+        prefix = self.title_prefix_var.get()
+        suffix = self.title_suffix_var.get()
+        
+        if "mockup_sets" not in self.config_data:
+            self.config_data["mockup_sets"] = {}
+        if site not in self.config_data["mockup_sets"]:
+            self.config_data["mockup_sets"][site] = {}
+            
+        self.config_data["mockup_sets"][site]["title_prefix_to_add"] = prefix
+        self.config_data["mockup_sets"][site]["title_suffix_to_add"] = suffix
+        
+        try:
+            with open(CONFIG_PATH, 'w', encoding='utf-8') as f:
+                json.dump(self.config_data, f, indent=4, ensure_ascii=False)
+            messagebox.showinfo("Thành công", f"Đã lưu Prefix/Suffix cho site {site}!")
+        except Exception as e:
+            messagebox.showerror("Lỗi", f"Không thể lưu config: {e}")
 
     def prev_image(self):
         if self.current_idx > 0:
