@@ -331,6 +331,8 @@ class KTBCrawlerGUI(tk.Tk):
             messagebox.showinfo("Thành công", "Đã lưu Cấu hình Chung!")
         except Exception as e:
             messagebox.showerror("Lỗi", f"Không thể lưu config: {e}")
+        finally:
+            self.focus_set()
 
     def save_title_config(self):
         site = self.title_site_combo.get()
@@ -355,6 +357,8 @@ class KTBCrawlerGUI(tk.Tk):
             messagebox.showinfo("Thành công", f"Đã lưu cấu hình riêng cho site {site}!")
         except Exception as e:
             messagebox.showerror("Lỗi", f"Không thể lưu config: {e}")
+        finally:
+            self.focus_set()
 
     def prev_image(self):
         if self.current_idx > 0:
@@ -489,6 +493,7 @@ class CropHandler:
             self.rect = None
 
     def on_press(self, event):
+        self.app.focus_set()  # Trả lại focus cho cửa sổ chính, thoát khỏi Combobox/Entry
         self.start_x = event.x
         self.start_y = event.y
         if self.rect: self.canvas.delete(self.rect)
