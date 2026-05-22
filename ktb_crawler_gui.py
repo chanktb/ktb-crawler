@@ -56,7 +56,6 @@ class KTBCrawlerGUI(tk.Tk):
         self.processed_urls = set()
         
         self.site_vars = {}
-        self.watermark_var = tk.BooleanVar(value=False)
         self.output_format_var = tk.StringVar(value="jpg")
         self.image_ref = None
         self.crop_handler = None
@@ -114,7 +113,6 @@ class KTBCrawlerGUI(tk.Tk):
             
             mockup_sets_config = self.config_data.get("mockup_sets", {})
             defaults = self.config_data.get("defaults", {})
-            use_watermark = job['use_watermark']
             output_format = job['output_format']
             
             for site_name in job['checked_sites']:
@@ -137,8 +135,8 @@ class KTBCrawlerGUI(tk.Tk):
                     with Image.open(mockup_path) as m_img:
                         final_mockup = apply_mockup(trimmed_img, m_img, chosen_mockup.get("coords"))
                         
-                        if use_watermark:
-                            wm_filename = mockup_cfg.get("watermark_file", f"{site_name}.png")
+                        wm_filename = mockup_cfg.get("watermark_file", f"{site_name}.png")
+                        if wm_filename != "Không dùng (None)":
                             wm_path = os.path.join(WATERMARK_DIR, wm_filename)
                             if os.path.exists(wm_path):
                                 wm_img = Image.open(wm_path).convert("RGBA")
@@ -219,25 +217,17 @@ class KTBCrawlerGUI(tk.Tk):
         options_frame = tk.LabelFrame(top_frame, text="2. Tùy chọn Chung", bg="#f0f0f0")
         options_frame.pack(side=tk.TOP, fill=tk.X, padx=10, pady=2)
         
-        # Hàng 1 của Options
-        opt_row1 = tk.Frame(options_frame, bg="#f0f0f0")
-        opt_row1.pack(side=tk.TOP, fill=tk.X, pady=2)
+        opt_row = tk.Frame(options_frame, bg="#f0f0f0")
+        opt_row.pack(side=tk.TOP, fill=tk.X, pady=2)
         
-        wm_cb = tk.Checkbutton(opt_row1, text="Thêm Watermark", variable=self.watermark_var, bg="#f0f0f0", font=("Arial", 10, "bold"), fg="blue")
-        wm_cb.pack(side=tk.LEFT, padx=10)
+        tk.Label(opt_row, text="Định dạng Output:", bg="#f0f0f0").pack(side=tk.LEFT, padx=10)
+        tk.Radiobutton(opt_row, text="JPG", variable=self.output_format_var, value="jpg", bg="#f0f0f0").pack(side=tk.LEFT)
+        tk.Radiobutton(opt_row, text="WEBP", variable=self.output_format_var, value="webp", bg="#f0f0f0").pack(side=tk.LEFT)
         
-        tk.Label(opt_row1, text="Định dạng Output:", bg="#f0f0f0").pack(side=tk.LEFT, padx=5)
-        tk.Radiobutton(opt_row1, text="JPG", variable=self.output_format_var, value="jpg", bg="#f0f0f0").pack(side=tk.LEFT)
-        tk.Radiobutton(opt_row1, text="WEBP", variable=self.output_format_var, value="webp", bg="#f0f0f0").pack(side=tk.LEFT)
-        
-        # Hàng 2 của Options
-        opt_row2 = tk.Frame(options_frame, bg="#f0f0f0")
-        opt_row2.pack(side=tk.TOP, fill=tk.X, pady=2)
-        
-        tk.Label(opt_row2, text="WP User mặc định:", bg="#f0f0f0").pack(side=tk.LEFT, padx=10)
+        tk.Label(opt_row, text=" |   WP User mặc định:", bg="#f0f0f0").pack(side=tk.LEFT, padx=10)
         self.wp_user_var = tk.StringVar(value=self.config_data.get("defaults", {}).get("wp_username", ""))
-        tk.Entry(opt_row2, textvariable=self.wp_user_var, width=20).pack(side=tk.LEFT, padx=5)
-        tk.Button(opt_row2, text="Lưu User", command=self.save_global_config, bg="#aaddaa").pack(side=tk.LEFT, padx=5)
+        tk.Entry(opt_row, textvariable=self.wp_user_var, width=20).pack(side=tk.LEFT, padx=5)
+        tk.Button(opt_row, text="Lưu User", command=self.save_global_config, bg="#aaddaa").pack(side=tk.LEFT, padx=5)
         
         title_frame = tk.LabelFrame(top_frame, text="3. Cấu hình riêng theo Site", bg="#f0f0f0")
         title_frame.pack(side=tk.TOP, fill=tk.X, padx=10, pady=2)
@@ -256,8 +246,9 @@ class KTBCrawlerGUI(tk.Tk):
         tk.Entry(title_frame, textvariable=self.title_suffix_var, width=15).pack(side=tk.LEFT, padx=5)
         
         tk.Label(title_frame, text="Watermark:", bg="#f0f0f0").pack(side=tk.LEFT, padx=5)
-        wm_files = [f for f in os.listdir(WATERMARK_DIR) if f.lower().endswith('.png')] if os.path.exists(WATERMARK_DIR) else []
-        self.wm_file_combo = ttk.Combobox(title_frame, values=wm_files, state="readonly", width=15)
+        base_wm_files = [f for f in os.listdir(WATERMARK_DIR) if f.lower().endswith('.png')] if os.path.exists(WATERMARK_DIR) else []
+        wm_files = ["Không dùng (None)"] + base_wm_files
+        self.wm_file_combo = ttk.Combobox(title_frame, values=wm_files, state="readonly", width=20)
         self.wm_file_combo.pack(side=tk.LEFT, padx=5)
         
         tk.Button(title_frame, text="Lưu Cấu Hình Site", command=self.save_title_config, bg="#aaddaa").pack(side=tk.LEFT, padx=10)
@@ -536,7 +527,6 @@ class CropHandler:
                 'filepath': self.filepath,
                 'crop_coords': crop_coords,
                 'checked_sites': [site for site, var in self.app.site_vars.items() if var.get()],
-                'use_watermark': self.app.watermark_var.get(),
                 'output_format': self.app.output_format_var.get().lower()
             }
             self.app.job_queue.put(job)
