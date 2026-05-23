@@ -96,7 +96,7 @@
             "Sides"
         ],
         "remote_queue_dir": "/home/khue/ktb_tmp_uploads",
-        "wp_username": "hue"
+        "wp_username": "tran"
     },
     "mockup_sets": {
         "printiment": {
@@ -2377,6 +2377,12 @@
             },
             "source_type": "api",
             "max_days_old": 1
+        },
+        "potoshirt.com": {
+            "source_type": "html-images"
+        },
+        "lifesportscollege.com": {
+            "source_type": "html-images"
         }
     }
 }
