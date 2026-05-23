@@ -51,7 +51,7 @@ def main():
         os.makedirs(CACHE_DIR)
 
     defaults = config.get("defaults", {})
-    wp_author = defaults.get("default_user_author", "chi")
+    wp_author = defaults.get("wp_username", defaults.get("default_user_author", "chi"))
     remote_queue_dir = defaults.get("remote_queue_dir", "/home/khue/ktb_tmp_uploads")
     
     vps_user = os.getenv("VPS_USERNAME")
