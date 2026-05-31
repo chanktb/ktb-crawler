@@ -2379,7 +2379,7 @@
             "max_days_old": 1
         },
         "potoshirt.com": {
-            "source_type": "html-images"
+            "source_type": "api"
         },
         "lifesportscollege.com": {
             "source_type": "html-images"
